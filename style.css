@@ -1,0 +1,219 @@
+body {
+    font-family: "Open Sans", serif;
+    padding: 0;
+    margin: 0;
+    color: #4B4B4B;
+    font-size: 14px;
+}
+
+.neva-block {
+    margin: 20px 15px;
+    border: 0.3px solid #c0c0c0;
+    border-radius: 16px;
+}
+
+.trip__image {
+    width: calc(100vw - 32px);
+    height: 25vh;
+    border-radius: 11px;
+}
+
+.image__one {
+    background: url('images/sankt-peterburg-piter-st-3495.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image__two {
+    background: url('images/AdobeStock_168443825_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-img img {
+    width: 100%;
+}
+
+.trip-new {
+    background: #FED74B;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #3E3E3E;
+    position: relative;
+    bottom: 70%;
+    padding: 8px 17px;
+    display: inline;
+    bottom: 170px;
+}
+
+.trip__all-year {
+    background: #099CE8;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #ffffff;
+    position: relative;
+    bottom: 70%;
+    padding: 8px 17px;
+    display: inline;
+    bottom: 170px;
+}
+
+.outside-info {
+    margin: 12px;
+    margin-top: -5px;
+}
+.trip-time_first {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.trip-time__text {
+    color: #9E9E9E;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.trip-title {
+    font-weight: 600;
+}
+
+.trip-time_second {
+    display: none;
+}
+
+.trip-options {
+    list-style-image: url('images/check.png');
+    padding-inline-start: 20px;
+}
+
+.trip-options li {
+    margin-bottom: 9px;
+}
+
+.trip-options li p {
+    margin-left: 20px;
+    margin-block-start: 0;
+}
+
+.flight-times {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.closest-flight-text {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.flight-time {
+    padding: 3px 11px;
+    background: #D9E8FF;
+    border-radius: 11px;
+    margin: 0 2px;
+    transition: background ease-out 0.2s;
+}
+
+.flight-time:hover {
+    background: #6BA6FF;
+}
+
+.flight-time:nth-child(2) {
+    margin-left: 20px;
+}
+
+.more-link {
+    text-decoration: underline dashed;
+    color:#3E3E3E;
+    margin-left: 10px;
+}
+
+.trip-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trip-price__text p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.trip-price__base {
+    font-size: 30px;
+}
+
+.trip-price__button {
+    background: #FED74B;
+    border: 0.5px solid #CBA500;
+    border-radius: 20px;
+    width: 165px;
+    height: 44px;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background ease-in .2s;
+    margin-left: 15px;
+}
+
+.trip-price__button:hover {
+    background: #e0be41;
+}
+
+@media (min-width: 720px) {
+    .neva-block {
+        display: flex;
+        max-width: 1070px;
+        margin: 20px 20px;
+    }
+    .outside-info {
+        margin-top: 5px;
+        margin-left: 25px;
+    }
+    .trip-title {
+        font-size: 30px;
+    }
+    .trip-time_first {
+        display: none;
+    }
+    .trip-time_second {
+        display: flex;
+        margin-top: 5px;
+    }
+    .trip-options li p {
+        font-size: 18px;
+    }
+    .trip-new, .trip__all-year {
+        bottom: 340px;
+        font-size: 16px;
+        padding: 14px 34px;
+    }
+    .trip__image {
+        width: calc(40vw - 30px);
+        max-width: 450px;
+        height: 100%;
+    }
+    .closest-flight-text {
+        width: unset;
+    }
+    .flight-time {
+        height: 22px;
+    }
+    .trip-price {
+        justify-content: left;
+    }
+    .trip-time__text {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+    .trip-price__button {
+        border: none;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1070px) {
+    .neva-block {
+        margin: 20px auto;
+    }
+}
